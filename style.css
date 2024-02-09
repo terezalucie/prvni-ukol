@@ -1,12 +1,12 @@
 html,
 * {
     margin: 0;
-    padding: 0 auto;
+    padding: 0;
     box-sizing: border-box;
 }
 
 h1 {
-    margin: 20px;
+    margin: 30px 10px 30px 10px;
     padding: 10px;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,12 +15,12 @@ h1 {
     text-align: center;
     border: 5px solid rgb(223, 223, 223); 
     position: fixed;
+    box-align: center;
     
 }
 
 body {
     background-color: rgb(13, 45, 45);
-    width: 70%;
     margin: 0 auto;
 }
 
@@ -30,8 +30,6 @@ div {
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     margin: 5px;
-    border: 2px solid rgb(90, 131, 156);
-    background-color: rgb(134, 183, 191);
     padding: 8px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.562);
 }
