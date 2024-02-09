@@ -7,7 +7,7 @@
 let teplota = prompt("Zadej teplotu v °F: ") 
 let vypocet = Math.floor((teplota - 32) * 5 / 9)
 
-document.body.innerHTML = "<h1>" + "Výsledek převodu teploty z " + teplota + "°F je: " + "<span>" + vypocet + "°C" + "</span>" + "</h1>"
+document.body.innerHTML = "<h1>" + "Výsledek převodu teploty z " + teplota + "°F je: " + "<div>" + vypocet + "°C" + "</div>" + "</h1>"
 
 
 /* KOMENTÁŘ POSTUP:
@@ -28,16 +28,16 @@ document.body.innerHTML = "<h1>" + "Výsledek převodu teploty z " + teplota + "
 if(otazka === "C"){
     let teplota1 = prompt("Zadej teplotu v °F:")
     let vypocet1 = Math.floor((teplota1 - 32) * 5 / 9)
-    document.body.innerHTML = "<h1>" + "Výsledek převodu teploty z " + teplota1 + "°F je: " + "<span>" + vypocet1 + "°C" + "</span>" + "</h1>"
+    document.body.innerHTML = "<h1>" + "Výsledek převodu teploty z " + teplota1 + "°F je: " + "<div>" + vypocet1 + "°C" + "</div>" + "</h1>"
 } else if(otazka === "F"){
     let teplota2 = prompt("Zadej teplotu v °C:")
     let vypocet2 = Math.floor((teplota2 * 9 / 5) + 32) 
-    document.body.innerHTML = "<h1>" + "Výsledek převodu teploty z " + teplota2 + "°C je: " + "<span>" + vypocet2 + "°F" + "</span>" + "</h1>"
+    document.body.innerHTML = "<h1>" + "Výsledek převodu teploty z " + teplota2 + "°C je: " + "<div>" + vypocet2 + "°F" + "</div>" + "</h1>"
 } else {
     document.body.innerHTML = "<h1>" + "Zadal/a jsi něco špatně. " + "</h1>"
-}   */
+}  
 
-
+ */
 
 /*KOMENTÁŘ: POSTUP:
  (Napadlo mě, že by se aplikace nejprve zeptala, jestli chceme převádět z Celsia na Fahrenheity anebo naopak.)
