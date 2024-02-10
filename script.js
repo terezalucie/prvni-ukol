@@ -4,7 +4,7 @@
 // PRVNÍ ŘEŠENÍ:
 
 
-let teplota = prompt("Zadej teplotu v °F: ") 
+let teplota = Number(prompt("Zadej teplotu v °F: "))
 let vypocet = Math.floor((teplota - 32) * 5 / 9)
 
 document.body.innerHTML = "<h1>" + "Výsledek převodu teploty z " + teplota + "°F je: " + "<div>" + vypocet + "°C" + "</div>" + "</h1>"
@@ -23,21 +23,21 @@ document.body.innerHTML = "<h1>" + "Výsledek převodu teploty z " + teplota + "
 // DRUHÉ ŘEŠENÍ:
 
 /* 
-  let otazka = prompt("Na jakou teplotu chceš převádět? Pro převod z Fahrenheitů na stupně Celsia zadej 'C', pro převod z Celsiů na stupně Fahrenheita zadej 'F'.")
+  let otazka = prompt("Na jakou teplotu chceš převádět? Pro převod z Fahrenheitů na stupně Celsia zadej 'C', pro převod z Celsiů na stupně Fahrenheita zadej 'F'.", "C / F")
 
 if(otazka === "C"){
-    let teplota1 = prompt("Zadej teplotu v °F:")
+    let teplota1 = Number(prompt("Zadej teplotu v °F:"))
     let vypocet1 = Math.floor((teplota1 - 32) * 5 / 9)
     document.body.innerHTML = "<h1>" + "Výsledek převodu teploty z " + teplota1 + "°F je: " + "<div>" + vypocet1 + "°C" + "</div>" + "</h1>"
 } else if(otazka === "F"){
-    let teplota2 = prompt("Zadej teplotu v °C:")
+    let teplota2 = Number(prompt("Zadej teplotu v °C:"))
     let vypocet2 = Math.floor((teplota2 * 9 / 5) + 32) 
     document.body.innerHTML = "<h1>" + "Výsledek převodu teploty z " + teplota2 + "°C je: " + "<div>" + vypocet2 + "°F" + "</div>" + "</h1>"
 } else {
     document.body.innerHTML = "<h1>" + "Zadal/a jsi něco špatně. " + "</h1>"
 }  
-
  */
+
 
 /*KOMENTÁŘ: POSTUP:
  (Napadlo mě, že by se aplikace nejprve zeptala, jestli chceme převádět z Celsia na Fahrenheity anebo naopak.)
